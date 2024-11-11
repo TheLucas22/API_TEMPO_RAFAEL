@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo com fundo em gradiente suave */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f6f8fc, #e6edf5); /* Gradiente claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container principal com bordas arredondadas */
+.container {
+    background: #ffffff; /* Branco puro */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve e mais ampla */
+    width: 80%;
+    max-width: 850px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2.8em;
+    color: #4a90e2; /* Azul pastel */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: #4a90e2;
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* Labels e selects com estilo clean e espaçamento */
+label {
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+select {
+    background: #f0f4f8; /* Fundo suave */
+    color: #333;
+    border: 2px solid #d1dae6; /* Azul cinza claro */
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+select:hover, select:focus {
+    border-color: #4a90e2; /* Azul pastel ao focar */
+}
+
+/* Div de dados */
+#dataAtual, #qualidadeAr {
+    background: #f7fafc;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #d1dae6;
+    font-size: 1.1em;
+    color: #333;
+    text-align: left;
+}
+
+/* Tabela com design limpo e arejado */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #d1dae6;
+}
+
+th {
+    background-color: #e6edf5;
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+td {
+    background-color: #f7fafc;
+    color: #333;
+}
+
+tr:nth-child(even) td {
+    background-color: #f0f4f8;
+}
+
+/* Botão com efeito suave */
+button {
+    background-color: #4a90e2; /* Azul pastel */
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 30px auto 0;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3); /* Sombra suave */
+}
+
+/* Relatório com borda e espaçamento */
+#relatorio {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    border: 1px solid #d1dae6;
+}
+
+#relatorio h2 {
+    font-size: 2em;
+    color: #4a90e2;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#info {
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    border: 1px solid #d1dae6;
+    color: #333;
+}
